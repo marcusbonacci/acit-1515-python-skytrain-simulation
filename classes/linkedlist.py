@@ -4,18 +4,16 @@ class linkedlist:
         self.previous = None
         self.data = data
 
-    def __next__(self):
-        return self.next
+    # More practice and explanation is needed
+    # def __next__(self):
+    #     if self.next:
+    #         return self.next
+    #     else:
+    #         raise StopIteration
 
-    def __iter__(self):
-        current = self
-        while current:
-            try:
-                current = next(current)
-                print(current.data)
-            except:
-                print("End of line")
-        current = self
+    # def __iter__(self):
+    #     current = self
+    #     return next(current)
 
     # Maximum recursion depth error, python doesn't like my linked list.
     # def __str__(self):
